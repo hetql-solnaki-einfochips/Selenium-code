@@ -22,5 +22,7 @@ select_country.select_by_visible_text('India')
 
 driver.find_element(By.CLASS_NAME,"checkbox-ui").click() #Xpath: //tagname[@attribute=''] or /tagname[text()='']
 driver.find_element(By.NAME,'start my free trial').click()
+
+#actual_error=driver.find_element(By.XPATH,'//span[contains(text(),'Enter your')]').text
 time.sleep(20)
 driver.quit()
